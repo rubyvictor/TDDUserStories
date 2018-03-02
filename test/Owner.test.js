@@ -20,5 +20,6 @@ it("has an item and customer name", () => {
 
   // expect(owner.orders).toEqual(order);
   expect(owner.orders).toContain(order);
+  expect(owner.orders).toHaveLength(1);
 });  
 });
