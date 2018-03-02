@@ -14,9 +14,15 @@ describe("Owner", () => {
 describe('Owner', () => {
 it("has an item and customer name", () => {
   var item = new Item("Milk Tea", 4);
+  var item2 = new Item("Cocoa powder",5);
   var customerName = "Mary";
-  var order = new Order(item,customerName);
-  var owner = new Owner(order);
+  var items = [item,item2];
+  var order = new Order(items,customerName);
+
+  
+  var owner = new Owner();
+  expect(owner.orders).toHaveLength(0);
+  owner.createOrder(order);
 
   // expect(owner.orders).toEqual(order);
   expect(owner.orders).toContain(order);

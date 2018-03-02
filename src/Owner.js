@@ -1,10 +1,10 @@
 class Owner {
-  constructor(orders) {
-    this.orders = [orders];
+  constructor() {
+    this.orders = [];
   }
 
-  createOrder(item, customerName) {
-      this.order.push(this.item,this.customerName);
+  createOrder(orderParam) {
+      this.orders.push(orderParam);
   }
 }
 
