@@ -6,7 +6,7 @@ describe("Owner", () => {
   it("should create an owner successfully", () => {
     var owner = new Owner();
 
-    expect(owner).toBeDefined;
+    expect(owner).toBeDefined();
     expect(owner).toBeInstanceOf(Owner);
   });
 });
